@@ -6,30 +6,30 @@ from logging.handlers import RotatingFileHandler
 
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+API_ID = int(os.environ.get("API_ID", "21346742"))
+API_HASH = os.environ.get("API_HASH", "571dd0607522052217b398aa3cd860d8")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+OWNER_ID = int(os.environ.get("OWNER_ID", "1345506970"))
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://VEGBIRYANI:VEGBIRYANI@sexyvegbriyani.b1zse.mongodb.net/?retryWrites=true&w=majority&appName=SexyVegBriyani")
+DB_NAME = os.environ.get("DB_NAME", "sexybiryani")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002037458506"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002124699670 -1001996096940"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
 
 
-PORT = os.environ.get("PORT", "8080")
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+PORT = os.environ.get("PORT", "8089")
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
 
 
 
 try:
-    ADMINS=[6848088376]
-    for x in (os.environ.get("ADMINS", "6848088376").split()):
+    ADMINS=[1345506970]
+    for x in (os.environ.get("ADMINS", "1345506970").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -44,7 +44,7 @@ except ValueError:
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "TRUE") == "True" else False
 
 DISABLE_CHANNEL_BUTTON = True if os.environ.get('DISABLE_CHANNEL_BUTTON', "True") == "True" else False
 
@@ -67,7 +67,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6848088376)
+ADMINS.append(1345506970)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
