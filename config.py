@@ -16,7 +16,7 @@ DB_NAME = os.environ.get("DB_NAME", "sexybiryani")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002037458506"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002124699670 -1002247825193"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002124699670"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
@@ -95,8 +95,8 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 
-# Jishu Developer 
+# Space Carder Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+# Telegram Channel @sexybriyani_bot
+# Backup Channel @Space_Carder
+# Developer @Space_Carder
